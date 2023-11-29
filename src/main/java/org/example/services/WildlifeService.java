@@ -3,7 +3,12 @@ package org.example.services;
 import org.example.dao.AnimalDao;
 import org.example.dao.EndangeredAnimalDao;
 import org.example.dao.SightingDao;
+import org.example.models.Animal;
+import org.example.models.EndangeredAnimal;
+import org.example.models.Sighting;
 import org.example.utils.DatabaseUtils;
+
+import java.util.List;
 
 public class WildlifeService {
     private final SightingDao sightingDao;
