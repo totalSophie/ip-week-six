@@ -36,17 +36,10 @@
         </dependency>
 
         <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.31</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4.1208</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>4.0.3</version>
-        </dependency>
-
         <dependency>
             <groupId>org.sql2o</groupId>
             <artifactId>sql2o</artifactId>
@@ -58,23 +51,11 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.jdbi</groupId>
-            <artifactId>jdbi3-sqlobject</artifactId>
-            <version>3.34.0</version>
-        </dependency>
-
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>23.0.0</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jdbi</groupId>
-            <artifactId>jdbi3-core</artifactId>
-            <version>3.34.0</version>
         </dependency>
     </dependencies>
     <build>
@@ -84,7 +65,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2.1</version>
                 <configuration>
-                    <mainClass>com.minty.Main</mainClass>
+                    <mainClass>org.example.Main</mainClass>
                     <arguments>
                         <argument>argument1</argument>
                     </arguments>
@@ -115,7 +96,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.minty.Main</mainClass>
+                            <mainClass>org.example.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -138,6 +119,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
