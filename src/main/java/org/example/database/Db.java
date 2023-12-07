@@ -11,7 +11,7 @@ public class Db {
      */
     public static Connection connect() {
         try {
-            return new Sql2o("jdbc:postgresql://localhost:5432/minty", "bill", "<cocoginger45").open();
+            return new Sql2o("jdbc:postgresql://localhost:5432/postgres", "postgres", "password").open();
         } catch (Exception exception) {
           throw new RuntimeException("Cannot connect to database.", exception);
         }
