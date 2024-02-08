@@ -8,7 +8,7 @@ An application that helps Rangers track animals in the wild.
 
 ## 👷 Author
 
-Sophia Chisiya
+Soph
 
 ## 🔨 Setup Instructions
 
